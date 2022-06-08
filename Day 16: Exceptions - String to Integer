@@ -1,0 +1,17 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+
+S = input()
+try:
+    integer_val = int(S)
+    print(integer_val)
+except ValueError:
+    print("Bad String")
