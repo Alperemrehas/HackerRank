@@ -1,0 +1,10 @@
+# Add your code here
+  def computeDifference(self):
+    max_abs = 0        
+    for i in range(len(self.__elements)):
+      for j in range(len(self.__elements)):
+        maximum_dif = abs(self.__elements[i]- self.__elements[j])
+          if maximum_dif > max_abs:
+            max_abs = maximum_dif
+        self.maximumDifference = max_abs
+
