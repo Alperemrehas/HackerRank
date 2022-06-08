@@ -1,3 +1,5 @@
+#!/bin/python3
+
 # Add your code here
   def computeDifference(self):
     max_abs = 0        
