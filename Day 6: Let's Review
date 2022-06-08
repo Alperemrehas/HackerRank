@@ -1,0 +1,38 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+def word_maker():
+    left = ""
+    middle = " "
+    right = ""
+    for i in evens:
+        left += i
+    for j in odds:
+        right += j
+    new_word = left + middle + right
+    res_words.append(new_word)
+    evens.clear()
+    odds.clear()    
+
+if __name__ == '__main__':
+    T = int(input().strip())
+    res_words = []
+    evens = []
+    odds = []
+    case = []
+    for t in range(0,T):
+        S = input().strip()
+        case.append(S)
+        
+        
+    for r in range(0,T):
+        for i in range(0,len(case[r])):
+            if i % 2 == 0:                
+                evens.append(case[r][i])
+                     
+            else:                
+                odds.append(case[r][i])
+        word_maker()
+
+    for wordy in res_words:
+        print(wordy)
+ 
