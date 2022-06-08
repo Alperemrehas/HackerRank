@@ -1,0 +1,29 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+
+binary_format = format(n, "b")
+flag = False
+count = 0
+count_lst = []
+for digit in binary_format:
+    flag = True
+    if digit == "1":
+        flag = True
+        count = count + 1        
+    elif digit == "0" and flag == True:
+        flag = False        
+        count_lst.append(count)
+        count = 0
+    count_lst.append(count)
+print(max(count_lst))
