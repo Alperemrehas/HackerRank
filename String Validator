@@ -1,3 +1,5 @@
+#!/bin/python3
+"""
 Python has built-in string validation methods for basic data. It can check if a string is composed of alphabetical characters, alphanumeric characters, digits, etc.
 
 str.isalnum()
@@ -65,7 +67,7 @@ True
 True
 True
 True
-
+"""
 
 if __name__ == '__main__':
     s = input()
